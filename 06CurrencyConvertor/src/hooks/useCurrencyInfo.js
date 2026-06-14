@@ -9,4 +9,8 @@ function useCurrencyInfo(currency){
         .then((res) => setData(res[currency]))
         console.log(data);  
     }, [currency])
+    return data
 }
+
+export default useCurrencyInfo;
+

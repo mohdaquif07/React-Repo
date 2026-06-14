@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+body{
+    font-family: Arial, sans-serif;
+}
+
+@layer components{
+    .flex-center {
+    @apply flex items-center justify-center;
+  }
+}
