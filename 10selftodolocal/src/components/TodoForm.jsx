@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { useTodo } from "../context";
+import { nanoid } from "nanoid";
 
 function TodoForm() {
   const [todo, setTodo] = useState("");
@@ -11,7 +12,7 @@ function TodoForm() {
 
     if (!todo) return;
 
-    addTodo({ id: Date.now(), todo, completed: false });
+    addTodo({ id: Date.now(), todo, completed: false }); // for id can also use this => crypto.randomUUID()
     setTodo("");
   };
 
